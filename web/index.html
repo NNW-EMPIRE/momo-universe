@@ -18,18 +18,18 @@
 
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="A new Flutter project.">
+  <meta name="description" content="a mobile app to ease mobile transaction">
 
   <!-- iOS meta tags & icons -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="dart">
+  <meta name="apple-mobile-web-app-title" content="momo_universe">
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png"/>
 
-  <title>dart</title>
+  <title>momo_universe</title>
   <link rel="manifest" href="manifest.json">
 
   <script>
@@ -54,5 +54,26 @@
       });
     });
   </script>
+  <script src=https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js"></script>
+  <script src=https://www.gstatic.com/firebasejs/9.10.0/firebase-firebasestore.js"></script>
+  <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAkxdtOWXTfd4OUD9t4FEjU6FhIBTEqKLk",
+    authDomain: "momo-universe.firebaseapp.com",
+    projectId: "momo-universe",
+    storageBucket: "momo-universe.appspot.com",
+    messagingSenderId: "425615901437",
+    appId: "1:425615901437:web:a8c9960a5522c1b93e7494"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+</script>
 </body>
 </html>
